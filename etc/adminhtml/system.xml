@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package     Mage4_Base
+ * @author      Rehan Mobin <m.rehan.mobin@gmail.com>
+ * @copyright   Copyright (c) Mage4. All rights reserved. (https://www.mage4.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="mage4_extensions" translate="label" sortOrder="500">
+            <label>Mage4 Extensions</label>
+        </tab>
+        <section id="mage4_ext" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>About MAGE4</label>
+            <tab>mage4_extensions</tab>
+            <resource>Mage4_Base::mage4_ext</resource>
+            <group id="intro" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="intro" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="1">
+                    <frontend_model>Mage4\Base\Block\Adminhtml\System\Config\Into</frontend_model>
+                    <attribute type="shared">1</attribute>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

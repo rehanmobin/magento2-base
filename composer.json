@@ -1,0 +1,35 @@
+{
+    "name": "mage4/magento2-base",
+    "type": "magento2-module",
+    "description": "Base module for MAGE4 extensions.",
+    "minimum-stability": "stable",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Rehan Mobin",
+            "email": "m.rehan.mobin@gmail.com",
+            "homepage": "https://mage4.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "magento/framework": "*"
+    },
+    "keywords": [
+        "magento extensions",
+        "magento",
+        "mage4"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Mage4\\Base\\": ""
+        }
+    }
+}
